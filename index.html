@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all">
+    <!-- SVGS -->
+        <div style="display: none;">
+            <svg>
+                <symbol id="menu-icon" viewBox="0 0 20 14">
+                    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+                        <path d="M0 6h18M0 0h18M0 12h18"></path>
+                    </g>
+                </symbol>
+            </svg>
+            
+            <svg>
+                <symbol id="arrow-bottom" viewBox="0 0 29.969 75">
+                    <path d="M719.633,1686.02h1.233v74.99h-1.233v-74.99Zm-14.616,59.96,1.008-.96,14.093,14.99-1.008.96Zm29.021-.38,0.958,1.03-15,14.3-0.958-1.02Z" transform="translate(-705.031 -1686)"/>
+                </symbol>
+            </svg>
+            
+            <svg>
+                <symbol id="arrow-right" viewBox="0 0 75 30">
+                    <path d="M752.985,2603.38v-1.23h75.023v1.23H752.985Zm59.986,14.63-0.958-1.01,15-14.1,0.958,1.01Zm-0.373-29.05,1.025-.96,14.309,15.02-1.024.96Z" transform="translate(-753 -2588)"/>
+                </symbol>
+            </svg>
+            <svg>
+                <symbol id="arrow-left" viewBox="0 0 60 23.781">
+                    <path d="M448.989,747.193v0.978H388.994v-0.978h59.995Zm-47.971-11.587,0.766,0.8-11.993,11.172-0.766-.8Zm0.3,23.007-0.819.759-11.443-11.891,0.819-.759Z" transform="translate(-389 -735.594)"/>
+                </symbol>
+            </svg>
+            <svg>
+                <symbol id="star" viewBox="0 0 18.156 17.31">
+                    <path d="M211.809,5878.89l2.805,5.69,6.273,0.91-4.539,4.43,1.072,6.25-5.611-2.95-5.61,2.95,1.072-6.25-4.539-4.43,6.272-.91Z" transform="translate(-202.719 -5878.88)"/>
+                </symbol>
+            </svg>
+            <svg>
+                <symbol id="facebook" viewBox="0 0 11 23">
+                    <path d="M1084.81,7813.02l0.18-10.51,3.18,0.06,0.55-4.09-3.66-.07,0.05-2.61c0.02-1.19.33-1.99,1.86-1.96l1.96,0.03,0.06-3.66a23.132,23.132,0,0,0-2.84-.22c-2.82-.05-4.79,1.83-4.85,5.33l-0.05,3.02-3.19-.06-0.07,4.1,3.19,0.06-0.18,10.5Z" transform="translate(-1078 -7790)"/>
+                </symbol>
+            </svg>
+            <svg>
+                <symbol id="instagram" viewBox="0 0 24 23">
+                    <path d="M1215.09,7797.12a4.5,4.5,0,0,0-4.65,4.3A4.565,4.565,0,1,0,1215.09,7797.12Zm5.13-6.96-9.99-.17a6.822,6.822,0,0,0-7.06,6.52l-0.18,9.57a6.77,6.77,0,0,0,6.8,6.75l9.99,0.16a6.811,6.811,0,0,0,7.05-6.51l0.18-9.57A6.762,6.762,0,0,0,1220.22,7790.16Zm-5.34,17.49a6.162,6.162,0,1,1,6.55-6.05A6.277,6.277,0,0,1,1214.88,7807.65Zm7.13-11.35a1.547,1.547,0,1,1,1.64-1.52A1.568,1.568,0,0,1,1222.01,7796.3Z" transform="translate(-1203 -7790)"/>
+                </symbol>
+            </svg>
+            <svg>
+                <symbol id="youtube" viewBox="0 0 27 19">
+                    <path d="M1363.38,7794.91a3.358,3.358,0,0,0-2.39-2.35c-2.11-.56-10.55-0.49-10.55-0.49s-8.44.07-10.54,0.64a3.433,3.433,0,0,0-2.36,2.41,35.687,35.687,0,0,0-.51,6.49,35.307,35.307,0,0,0,.6,6.47,3.358,3.358,0,0,0,2.39,2.35c2.13,0.56,10.55.5,10.55,0.5s8.44-.07,10.54-0.64a3.367,3.367,0,0,0,2.36-2.4,35.542,35.542,0,0,0,.51-6.48A33.96,33.96,0,0,0,1363.38,7794.91Zm-15.53,10.65-0.06-8.08,7.04,3.98Z" transform="translate(-1337 -7792)"/>
+                </symbol>
+            </svg>
+        </div>
+        
+            
+<!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <a href="#" class="nav_logo">your logo</a>
+                    <nav class="nav">
+                        <a href="#" class="nav_link">home</a>
+                        <a href="#" class="nav_link">about</a>
+                        <a href="#" class="nav_link">courses</a>
+                        <a href="#" class="nav_link">blog</a>
+                    </nav>
+                    <div class="nav_btns">
+                        <button class="nav_btn">sign in</button>
+                        <button class="nav_menu">
+                            <svg class="nav_menu_icon">
+                                <use xlink:href="#menu-icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+<!-- Main Page -->
+            <div class="main_pg">
+                <div class="main_pg_edition">
+                    <h3>edition</h3>
+                    <h1>2022</h1>
+                </div>
+                <div class="container">
+                    <div class="main_pg_inner">
+                        <div class="main_pg_left">
+                            <h1>ui<span>.</span></h1>
+                            <h2>beginer'<span>s</span></h2>
+                        </div>
+                        <div class="main_pg_right">
+                            <div class="main_pg_content">
+                                <h1>Start guide for beginner designers</h1>
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</h6>
+                                <div class="main_pg_btns">
+                                    <a href="#" class="main_pg_btn ">let´s start</a>
+                                    <a href="#" class="main_pg_btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/main-pg/main-pg-bg.jpg" alt="main bg" class="main_pg_bg">
+                <svg class="main_pg_left_arrow">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+                <svg class="main_pg_right_arrow">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+
+<!-- Statistics -->
+            <div class="main_statistics">
+                <div class="container">
+                    <div class="statistics_inner">
+                        <div class="statistics_item">
+                            <h1><span>+</span>150</h1>
+                            <div>
+                                <h3>happy</h3>
+                                <h2>students</h2>
+                            </div>
+                        </div>
+                        <div class="statistics_item">
+                            <h1><span>+</span>50</h1>
+                            <div>
+                                <h3>certified</h3>
+                                <h2>courses</h2>
+                            </div>
+                        </div>
+                        <div class="statistics_item">
+                            <h1><span>+</span>1000</h1>
+                            <div>
+                                <h3>awards</h3>
+                                <h2>received</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Explore -->
+            <div class="explore">
+                <div class="container">
+                    <div class="explore_content">
+                        <h1>accept</h1>
+                        <h3>new</h3>
+                        <h1>challenges</h1>
+                    </div>
+                </div>
+                <a href="#" class="explore_arrow">
+                    <svg class="explore_arrow_icon">
+                        <use xlink:href="#arrow-bottom"></use>
+                    </svg>    
+                </a>
+                <img src="img/explore/explore-bg.jpg" alt="explore bg" class="explore_img">
+            </div>
+
+
+<!-- Courses -->
+            <div class="courses">
+                <div class="container">
+                    <div class="courses_top">
+                        <div class="courses_top_left">
+                            <h1>find</h1>
+                            <h3>your course.</h3>
+                        </div>
+                        <div class="courses_top_right">
+                            <img src="img/courses/rectangle.png" alt="rectangle">
+                            <div>
+                                <h1>edition</h1>
+                                <h1>2022</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses_inner">
+                        <div class="courses_item">
+                            <h1 class="courses_item_number">.01</h1>
+                            <h2>course <span>01</span></h2>
+                            <div class="courses_item_line"></div>
+                            <div class="courses_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            </div>
+                            <a href="">read more</a>
+                        </div>
+                        <div class="courses_item">
+                            <h1 class="courses_item_number">.02</h1>
+                            <h2>course <span>02</span></h2>
+                            <div class="courses_item_line"></div>
+                            <div class="courses_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            </div>
+                            <a href="">read more</a>
+                        </div>
+                        <div class="courses_item">
+                            <h1 class="courses_item_number">.03</h1>
+                            <h2>course <span>03</span></h2>
+                            <div class="courses_item_line"></div>
+                            <div class="courses_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            </div>
+                            <a href="">read more</a>
+                        </div>
+                        <div class="courses_item">
+                            <h1 class="courses_item_number">.04</h1>
+                            <h2>course <span>04</span></h2>
+                            <div class="courses_item_line"></div>
+                            <div class="courses_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                            </div>
+                            <a href="">read more</a>
+                        </div>
+                    </div>
+                    <div class="course_bottom">
+                        <h1>more courses</h1>
+                        <a href="#" class="course_arrow">
+                            <svg class="course_icon">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+<!-- About -->
+            <div class="about">
+                <div class="container">
+                    <div class="about_content">
+                        <h1>about <span>us.</span></h1>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.</div>
+                        <div class="about_content_inner">
+                            <div class="about_item">
+                                <img src="img/about/rectangle.png" alt="">
+                                <h1>Lorem, ipsum dolor.</h1>
+                            </div>
+                            <div class="about_item">
+                                <img src="img/about/rectangle.png" alt="">
+                                <h1>Lorem, ipsum dolor.</h1>
+                            </div>
+                            <div class="about_item">
+                                <img src="img/about/rectangle.png" alt="">
+                                <h1>Lorem, ipsum dolor.</h1>
+                            </div>
+                            <div class="about_item">
+                                <img src="img/about/rectangle.png" alt="">
+                                <h1>Lorem, ipsum dolor.</h1>
+                            </div>
+                        </div>
+                        <a href="" class="about_btn">read more</a>
+                    </div>
+                </div>
+                <img src="img/about/about-bg.jpg" alt="about bg" class="about_img">
+            </div>
+
+<!-- Why -->
+            <div class="why">
+                <div class="container">
+                    <div class="why_inner">
+                        <div class="why_content">
+                            <h1>why <span>us.</span></h1>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto non eos ullam, beatae unde est iusto quo sed nobis, illum neque tenetur at? Dolorem ipsa quisquam vero nisi quos.</div>
+                            <a href="#" class="why_btn">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/why/why-bg.jpg" alt="why background" class="why_img">
+            </div>
+
+<!-- Start -->
+            <div class="start">
+                <div class="container">
+                    <div class="start_inner">
+                        <video src="" poster="img/start/placeholder.jpg"></video>
+                    </div>
+                </div>
+            </div>
+
+<!-- What -->
+            <div class="what">
+                <div class="container">
+                    <div class="what_content">
+                        <h1>what</h1>
+                        <h6>users think.</h6>
+                    </div>
+                    <div class="what_inner">
+                        <div class="what_item">
+                            <img src="img/what/1.png" alt="item img">
+                            <h1>laura smith</h1>
+                            <div class="what_item_stars">
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star what_star_disabled">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                            </div>
+                            <div class="what_item_text"><img src="img/what/quote_1.png" alt="quotation marks" class="quote_left"><img src="img/what/quote_2.png" alt="quotation marks" class="quote_right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <div class="what_item">
+                            <img src="img/what/2.png" alt="item img">
+                            <h1>john smith</h1>
+                            <div class="what_item_stars">
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star what_star_disabled">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                            </div>
+                            <div class="what_item_text"><img src="img/what/quote_1.png" alt="quotation marks" class="quote_left"><img src="img/what/quote_2.png" alt="quotation marks" class="quote_right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <div class="what_item">
+                            <img src="img/what/3.png" alt="item img">
+                            <h1>sara smith</h1>
+                            <div class="what_item_stars">
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg class="what_star what_star_disabled">
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                            </div>
+                            <div class="what_item_text"><img src="img/what/quote_1.png" alt="quotation marks" class="quote_left"><img src="img/what/quote_2.png" alt="quotation marks" class="quote_right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                    </div>
+                </div>
+                <svg class="what_left_arrow">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+                <svg class="what_right_arrow">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+
+<!-- Subscribe -->
+            <div class="subscribe">
+                <div class="container">
+                    <div class="subscribe_inner">
+                        <div class="subscribe_content">
+                            <h1>Subscribe</h1>
+                            <h3>to our newsletter</h3>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt .</div>
+                            <form action="POST" class="subscribe_form">
+                                <input type="text" placeholder="name" class="subscribe_name_filed">
+                                <input type="text" placeholder="mail" class="subscribe_mail_filed">
+                                <textarea name="" id="" placeholder="message" cols="30" rows="10" class="subscribe_text_filed"></textarea>
+                                <button class="subscribe_btn" type="submit">send message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/subscribe/1.png" alt="subscirbe img" class="subscribe_img">
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_item">
+                        <h1>About</h1>
+                        <a>History</a>
+                        <a>Our Team</a>
+                        <a>Mission Statement</a>
+                        <a>Terms & Condition</a>
+                        <a>Privacy Policy</a>
+                    </div>
+                    <div class="footer_item">
+                        <h1>What we do</h1>
+                        <a>Newsand stories</a>
+                        <a>Publications</a>
+                        <a>Take action</a>
+                        <a>Recomendations</a>
+                        <a>Help</a>
+                    </div>
+                        <div class="footer_item_right">
+                            <h1>Sign Up To Receive Our Newsletter</h1>
+                            <input type="text">
+                            <div class="footer_social">
+                                <h1>Follow us!</h1>
+                                <a href="" class="footer_social_link">
+                                    <svg class="footer_social_icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="footer_social_link">
+                                    <svg class="footer_social_icon">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="footer_social_link">
+                                    <svg class="footer_social_icon">
+                                        <use xlink:href="#youtube"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
